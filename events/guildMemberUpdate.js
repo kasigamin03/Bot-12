@@ -4,7 +4,7 @@ const db = require("quick.db")
 module.exports = async (client, oldMember, newMember) => {
 
 try {
- var logChannel = oldMember.guild.channels.cache.find(c => c.name === "dumb-logs");
+ var logChannel = oldMember.guild.channels.cache.find(c => c.name === "voney-logs");
  if (!logChannel) return;
  oldMember.guild.fetchAuditLogs().then(logs => {
   var userID = logs.entries.first().executor.id;
