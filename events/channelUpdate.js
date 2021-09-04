@@ -5,7 +5,7 @@ module.exports = async (client, oldChannel, newChannel) => {
  try {
   if (!oldChannel.guild) return;
   if (!newChannel.guild.member(client.user).hasPermission("EMBED_LINKS", "VIEW_CHANNEL", "READ_MESSAGE_HISTORY", "VIEW_AUDIT_LOG", "SEND_MESSAGES")) return;
-  const log = oldChannel.guild.channels.cache.find(log => log.name === "dumb-logs")
+  const log = oldChannel.guild.channels.cache.find(log => log.name === "voney-logs")
   if(!log) return;
   if(log.type !== "text") return;
   if (!log.guild.member(client.user).hasPermission("EMBED_LINKS", "VIEW_CHANNEL", "READ_MESSAGE_HISTORY", "VIEW_AUDIT_LOG", "SEND_MESSAGES")) return;
