@@ -8,7 +8,7 @@ module.exports = {
      {
       return;
     }
-message.guild.channels.create('dumb-logs', {
+message.guild.channels.create('voney-logs', {
   type: 'text',
   permissionOverwrites: [
      {
@@ -17,6 +17,6 @@ message.guild.channels.create('dumb-logs', {
     },
   ],
 })
-message.reply("Done created a channe named dumb-logs and the logs will be send there");
+message.reply("Done created a channe named voney-logs and the logs will be send there");
   }
 }
