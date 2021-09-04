@@ -8,7 +8,7 @@ module.exports = {
      {
       return;
     }
-message.guild.channels.cache.find(channel => channel.name === "dumb-logs").delete("Logs Off");
+message.guild.channels.cache.find(channel => channel.name === "voney-logs").delete("Logs Off");
 
 
 message.reply("Done removed the channel and logs feature both");
