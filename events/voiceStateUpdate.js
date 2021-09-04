@@ -4,7 +4,7 @@ const config = require("../config");
 module.exports = async (client, oldState, newState, guild) => {
 
 try {
- var logChannel = oldState.guild.channels.cache.find(c => c.name === 'dumb-logs');  
+ var logChannel = oldState.guild.channels.cache.find(c => c.name === 'voney-logs');  
  if (!logChannel) return;
  oldState.guild.fetchAuditLogs().then(logs => {
   var userID = logs.entries.first().executor.id;
